@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', sans-serif;
+  
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f6f5f5; 
+  
+}
+
+
+
+
+
+
+
+
+.container {
+  flex: 1;
+  display: flex;
+  width: 80%;
+  max-width: 950px;
+  height: 500px;
+  margin: 250px auto; 
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+border-radius: 15px;
+animation: float 3s ease-in-out infinite;
+
+}
+
+
+
+
+
+.left-panel {
+
+  flex: 1;
+  background: linear-gradient(135deg, #032343, #2c22a3,#6b61d3,#f5f7f8,#f5f7f8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  position: relative;
+  
+}
+
+
+.left-panel h1 {
+  width: 420px;;
+  font-family: Helvetica, sans-serif;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.left-panel p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+.right-panel {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 35px;
+}
+
+.right-panel h2 {
+  font-size: 28px;
+  font-weight:600px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  
+  
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+  width:310px;
+  font-size:18px;
+}
+
+.input-group input:focus {
+  border-color: #2556b6;
+  box-shadow: 0 0 5px rgba(20, 50, 130, 0.3);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.options a {
+  color: #2a026a;
+  text-decoration: none;
+}
+.options a:hover{
+    color:rgba(83, 142, 214, 0.867);
+}
+.logbtn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2a026a;
+  color: white;
+  font-size: 18px;
+  font-weight: 550;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: rgba(83, 142, 214, 0.867);
+  transform: translateY(3px);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .left-panel {
+    text-align: center;
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }}
