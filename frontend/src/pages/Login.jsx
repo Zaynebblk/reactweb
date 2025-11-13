@@ -1,22 +1,43 @@
 
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "../css/login.css";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
   const handleLogin = async (e) => {
-  e.preventDefault();
-  try {
-    const response = await fetch("http://localhost:5000/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
-    const data = await response.json();
-    alert(data.message);
-  } catch (err) {
-    console.error(err);
-  }
-};
+    e.preventDefault();
+    setError("");
+    setLoading(true);
+
+    try {
+      const response = await fetch("http://localhost:5000/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        // Connexion réussie - redirection vers Entreprise
+        navigate("/Entreprise");
+      } else {
+        // Afficher le message d'erreur
+        setError(data.message);
+      }
+    } catch (err) {
+      console.error(err);
+      setError("Erreur de connexion au serveur. Veuillez réessayer.");
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <div>
       {/* Navbar */}
@@ -54,11 +75,25 @@ function Login() {
         </div>
         <div className="right-panel">
           <h2>Login</h2>
-          <form >
+          {error && (
+            <div style={{
+              backgroundColor: '#ffebee',
+              color: '#c62828',
+              padding: '10px',
+              borderRadius: '5px',
+              marginBottom: '15px',
+              border: '1px solid #ef5350'
+            }}>
+              {error}
+            </div>
+          )}
+          <form onSubmit={handleLogin}>
             <div className="input-group">
               <input
                 type="email"
                 placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -66,7 +101,8 @@ function Login() {
               <input
                 type="password"
                 placeholder="Password"
-                
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 required
               />
             </div>
@@ -76,7 +112,9 @@ function Login() {
               </label>
               <Link to="/Resetpass">Forgot password?</Link>
             </div>
-            <button type="submit" className="logbtn">Login</button>
+            <button type="submit" className="logbtn" disabled={loading}>
+              {loading ? "Connexion..." : "Login"}
+            </button>
           </form>
         </div>
       </div>

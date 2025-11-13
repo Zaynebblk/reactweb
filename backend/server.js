@@ -1,42 +1,51 @@
-const express = require("express");
-const mysql = require("mysql2"); // <- this is your MySQL library
-const cors = require("cors");
-const bodyParser = require("body-parser");
-
+const express = require('express');
+const cors = require('cors');
 const app = express();
-const PORT = 5000;
+const db = require('./db');
 
-// Middlewares
-app.use(cors());
-app.use(bodyParser.json());
+// Middleware
+app.use(cors()); // Permet les requêtes depuis le frontend
+app.use(express.json()); // Pour lire le body JSON
 
-const db = mysql.createConnection({
-  host: "127.0.0.1",
-  user: "reactuser",
-  password: "ReactPass123!",
-  database: "reactweb_db",
+// Signup : ajouter un utilisateur
+app.post('/signup', (req, res) => {
+  const { email, motdepasse } = req.body;
+  const sql = 'INSERT INTO users (email, motdepasse) VALUES (?, ?)';
+  db.query(sql, [email, motdepasse], (err, result) => {
+    if (err) return res.status(500).send(err);
+    res.send('Utilisateur ajouté !');
+  });
 });
 
-// Connect to MySQL
-db.connect((err) => {
-  if (err) console.log("DB connection error:", err);
-  else console.log("Connected to MySQL database");
-});
-
-// ✅ Use 'db', not 'sql' here
-app.post("/login", (req, res) => {
+// Login : vérifier l'utilisateur
+app.post('/login', (req, res) => {
   const { email, password } = req.body;
-  db.query(
-    "SELECT * FROM users WHERE email = ? AND password = ?",
-    [email, password],
-    (err, results) => {
-      if (err) return res.status(500).send(err);
-      if (results.length > 0) res.json({ success: true, message: "Login successful", user: results[0] });
-      else res.json({ success: false, message: "Invalid email or password" });
+  
+  if (!email || !password) {
+    return res.status(400).json({ success: false, message: 'Email et mot de passe requis' });
+  }
+
+  const sql = 'SELECT * FROM users WHERE email = ? AND motdepasse = ?';
+  db.query(sql, [email, password], (err, results) => {
+    if (err) {
+      console.error('Erreur lors de la connexion:', err);
+      return res.status(500).json({ success: false, message: 'Erreur serveur' });
     }
-  );
+    
+    if (results.length > 0) {
+      res.json({ 
+        success: true, 
+        message: 'Connexion réussie !',
+        user: { email: results[0].email }
+      });
+    } else {
+      res.status(401).json({ 
+        success: false, 
+        message: 'Email ou mot de passe incorrect' 
+      });
+    }
+  });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+const PORT = 5000;
+app.listen(PORT, () => console.log(`Serveur démarré sur le port ${PORT}`));
