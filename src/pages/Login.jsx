@@ -1,33 +1,22 @@
-import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
 import "../css/login.css";
 
 function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("http://localhost:3000/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
-      });
-      const data = await response.json();
-      console.log("Response:", data);
-
-      if (data.success) {
-        window.location.href = "/main";
-      } else {
-        alert("Invalid email or password");
-      }
-    } catch (error) {
-      console.error("Error during login:", error);
-      alert("An error occurred. Please try again later.");
-    }
-  };
-
+  const handleLogin = async (e) => {
+  e.preventDefault();
+  try {
+    const response = await fetch("http://localhost:5000/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
+    });
+    const data = await response.json();
+    alert(data.message);
+  } catch (err) {
+    console.error(err);
+  }
+};
   return (
     <div>
       {/* Navbar */}
@@ -65,13 +54,11 @@ function Login() {
         </div>
         <div className="right-panel">
           <h2>Login</h2>
-          <form onSubmit={handleSubmit}>
+          <form >
             <div className="input-group">
               <input
                 type="email"
                 placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -79,8 +66,7 @@ function Login() {
               <input
                 type="password"
                 placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                
                 required
               />
             </div>
@@ -88,7 +74,7 @@ function Login() {
               <label>
                 <input type="checkbox" /> Remember me
               </label>
-              <Link to="/forgotpass">Forgot password?</Link>
+              <Link to="/Resetpass">Forgot password?</Link>
             </div>
             <button type="submit" className="logbtn">Login</button>
           </form>

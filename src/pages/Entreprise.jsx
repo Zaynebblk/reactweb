@@ -12,8 +12,8 @@ function Entreprise() {
   return (
     <div>
       {/* Navbar */}
-      <header className="navbar">
-        <nav>
+      <nav className="navbar">
+        
           <div className="logo">
             <img src="src\imgs\logo.png" alt="logo" width="130" height="130" />
             <h1>TechnoZone</h1>
@@ -36,7 +36,7 @@ function Entreprise() {
                     </ul>
         
         </nav>
-      </header>
+      
 
       {/* Main Section */}
       <main className="mainsection">
