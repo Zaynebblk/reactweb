@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 const Article = () => {
   return (
-    <div>
+    <div>  
       <nav className="navbar">
         <div className="logo">
-            <img src="src\imgs\logo.png"></img>
+            <img src="src\imgs\logo.png" alt="logo" width="80" height="80" />
              <p>TechnoZone </p>
              </div>
         <ul>
@@ -21,46 +21,49 @@ const Article = () => {
               <Link to="/Login">Login</Link>
             </li>
             <li>
-              <a href="#" className="btn">
-                Contact Us
+              <a href="/Contact" className="btn">
+                  Contact Us
               </a>
             </li>
           </ul>
       </nav>
       <main className="main-content">
       <section className="hero">
-        <h1>
-          Bienvenue chez <span>TechnoZone</span>
-        </h1>
-        <p>Où l’innovation rencontre la performance.</p>
-      </section>
+  <h1>
+    Welcome to <span>TechnoZone</span>
+  </h1>
+  <p>Where innovation meets performance.</p>
+</section>
 
-      <section id="produits" className="products">
-        <h2>Nos Produits</h2>
-        <div className="product-grid">
-          <a href="pc.jsx" className="product-card">
-            <img src="src\imgs\pc-portable.png" alt="PC Portable" />
-            <h3>PC Portable</h3>
-            <p>Puissance et mobilité réunies.</p>
-          </a>
-          <a href="clavier.jsx" className="product-card">
-            <img src="/src/imgs/clavier.webp" alt="Clavier" />
-            <h3>Clavier</h3>
-            <p>Confort et précision pour vos doigts.</p>
-          </a>
-          <a href="souris.jsx" className="product-card">
-            <img src="/src/imgs/souris.webp" alt="Souris" />
-            <h3>Souris</h3>
-            <p>Rapide, fluide et ergonomique.</p>
-          </a>
-          <a href="casque.jsx" className="product-card">
-            <img src="/src/imgs/casque.webp" alt="Casque" />
-            <h3>Casque</h3>
-            <p>Plongez dans le son haute définition.</p>
-          </a>
-        </div>
-      </section>
-        </main>
+<section id="produits" className="products">
+  <h2>Our Products</h2>
+  <div className="product-grid">
+    <a href="pc.jsx" className="product-card">
+      <img src="src/imgs/pc-portable.png" alt="Laptop" />
+      <h3>Laptop</h3>
+      <p>Power and mobility combined.</p>
+    </a>
+
+    <a href="clavier.jsx" className="product-card">
+      <img src="/src/imgs/clavier.webp" alt="Keyboard" />
+      <h3>Keyboard</h3>
+      <p>Comfort and precision at your fingertips.</p>
+    </a>
+
+    <a href="souris.jsx" className="product-card">
+      <img src="/src/imgs/souris.jpg" alt="Mouse" />
+      <h3>Mouse</h3>
+      <p>Fast, smooth, and ergonomic.</p>
+    </a>
+
+    <a href="casque.jsx" className="product-card">
+      <img src="/src/imgs/casque.webp" alt="Headset" />
+      <h3>Headset</h3>
+      <p>Dive into high-definition sound.</p>
+    </a>
+  </div>
+</section>
+</main>
 
       {/* Footer */}
       <footer>
@@ -69,13 +72,13 @@ const Article = () => {
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com/" className="facebook">
-            <i className="fab fa-facebook-f"></i>
+            <i className="fa-brands fa-facebook-f"></i>
           </a>
           <a href="https://www.instagram.com/" className="instagram">
-            <i className="fab fa-instagram"></i>
+            <i className="fa-brands fa-instagram"></i>
           </a>
           <a href="https://www.linkedin.com/in/" className="linkedin">
-            <i className="fab fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
       </footer>

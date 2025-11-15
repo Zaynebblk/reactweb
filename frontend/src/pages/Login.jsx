@@ -38,37 +38,34 @@ function Login() {
       setLoading(false);
     }
   };
-  return (
-    <div>
+ return (
+    <div className="login-page">
       {/* Navbar */}
       <nav className="navbar">
-        
-          <div className="logo">
-            <img src="src\imgs\logo.png" alt="logo" width="130" height="130" />
-            <h1>TechnoZone</h1>
-          </div>
-          <ul>
-                      <li>
-                        <Link to="/Entreprise">Home</Link>
-                      </li>
-                      <li>
-                        <Link to="/Article">Article</Link>
-                      </li>
-                      <li>
-                        <Link to="/Login">Login</Link>
-                      </li>
-                      <li>
-                        <a href="/Contact" className="btn">
-                          Contact Us
-                        </a>
-                      </li>
-                    </ul>
-        
+        <div className="logo">
+          <img src="src/imgs/logo.png" alt="logo" width="80" height="80" />
+          <h2>TechnoZone</h2>
+        </div>
+        <ul>
+          <li>
+            <Link to="/entreprise">Home</Link>
+          </li>
+          <li>
+            <Link to="/article">Article</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/contact" className="btn">
+              Contact Us
+            </Link>
+          </li>
+        </ul>
       </nav>
 
-
       {/* Main container */}
-      <div className="container">
+      <main className="container login-page">
         <div className="left-panel">
           <h1>Welcome back!</h1>
           <p>You can sign in to access your existing account.</p>
@@ -108,15 +105,15 @@ function Login() {
             </div>
             <div className="options">
               <label>
-                <input type="checkbox" /> Remember me
+                <input type="checkbox" className="remember"/>Remember me
               </label>
-              <Link to="/Resetpass">Forgot password?</Link>
+              <Link to="/resetpass" className="f">Forgot password?</Link>
             </div>
             <button type="submit" className="logbtn" disabled={loading}>
               {loading ? "Connexion..." : "Login"}
             </button>
           </form>
-          <p style={{
+           <p style={{
             textAlign: 'center',
             marginTop: '20px',
             fontSize: '14px',
@@ -129,27 +126,26 @@ function Login() {
             }}>Inscrivez-vous</Link>
           </p>
         </div>
-      </div>
+      </main>
 
-       {/* Footer */}
+      {/* Footer */}
       <footer>
         <div>
           <button className="help-btn">Help</button>
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com/" className="facebook">
-            <i className="fab fa-facebook-f"></i>
+            <i className="fa-brands fa-facebook-f"></i>
           </a>
           <a href="https://www.instagram.com/" className="instagram">
-            <i className="fab fa-instagram"></i>
+            <i className="fa-brands fa-instagram"></i>
           </a>
           <a href="https://www.linkedin.com/in/" className="linkedin">
-            <i className="fab fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
       </footer>
     </div>
-    
   );
 }
 
