@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #e1e3fc; /* 👈 this keeps it consistent */
+  background-color: #e1e3fc; 
   padding: 2rem;
 
 }
@@ -20,8 +20,8 @@
 }
 
 .maintext h1 {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 3rem;
+  font-family: 'Libre Baskerville';
+  font-size: 4.2rem;
   font-weight: 700;
   color: #4062c0;
   margin-bottom: 1rem;
@@ -31,15 +31,17 @@
   font-size: 1.2rem;
   color: #042172;
   line-height: 1.5;
-  max-width: 800px;
+  font-family: 'open sans';
   margin: 0 auto;
+  
 }
 
 .mainimg img {
-  width: 600px;
+  width: 1100px;
+  height:500px;
   max-width: 85%;
   border-radius: 12px;
-  margin: 2rem 0;
+  margin: 1rem auto;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
 }
@@ -49,13 +51,13 @@
 }
 
 .mainp p {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'open sans';
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(2, 2, 158);
+  color: #02029e;
 }
 
-/* ===== Animations ===== */
+
 .fade-in {
   opacity: 0;
   animation: fadeIn 1.5s ease-in forwards;

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../css/Entreprise.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 import { Link } from "react-router-dom";
 
 function Entreprise() {
@@ -15,8 +16,8 @@ function Entreprise() {
       <nav className="navbar">
         
           <div className="logo">
-            <img src="src\imgs\logo.png" alt="logo" width="130" height="130" />
-            <h1>TechnoZone</h1>
+            <img src="src\imgs\logo.png" alt="logo" width="80" height="80" />
+            <h2>TechnoZone</h2>
           </div>
           <ul>
                       <li>
@@ -55,8 +56,9 @@ function Entreprise() {
           <img
             src="src\imgs\materiel-info.webp"
             alt="Entreprise"
+            width="500" height="300"
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
           />
         </div>
 
@@ -74,13 +76,13 @@ function Entreprise() {
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com/" className="facebook">
-            <i className="fab fa-facebook-f"></i>
+            <i className="fa-brands fa-facebook-f"></i>
           </a>
           <a href="https://www.instagram.com/" className="instagram">
-            <i className="fab fa-instagram"></i>
+            <i className="fa-brands fa-instagram"></i>
           </a>
           <a href="https://www.linkedin.com/in/" className="linkedin">
-            <i className="fab fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
       </footer>

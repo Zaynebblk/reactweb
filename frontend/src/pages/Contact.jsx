@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-page">
       <nav className="navbar">
         <div className="logo">
           <img
             src="src/imgs/logo.png"
             alt="technoZonelogo"
-            width="100"
-            height="100"
+            width="80"
+            height="80"
           />
           <span>
             <h1>TechnoZone</h1>
@@ -71,7 +71,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="social-icons">
+          <div className="contact-icons">
             <a
               href="https://www.facebook.com/"
               target="_blank"
@@ -128,13 +128,13 @@ const Contact = () => {
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com/" className="facebook">
-            <i className="fab fa-facebook-f"></i>
+            <i className="fa-brands fa-facebook-f"></i>
           </a>
           <a href="https://www.instagram.com/" className="instagram">
-            <i className="fab fa-instagram"></i>
+            <i className="fa-brands fa-instagram"></i>
           </a>
           <a href="https://www.linkedin.com/in/" className="linkedin">
-            <i className="fab fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
       </footer>

@@ -9,7 +9,7 @@
  align-items: center;
     
   height: 75vh;
-  background: #596ded;
+  
   margin:110px auto;
 
 }
@@ -17,8 +17,9 @@
 
 
 .container h2 {
-  color: #16065d;
+  color: #042172;
   font-size: 40px;
+  font-family: 'libre baskerville';
   margin-bottom: 30px;
   margin-top: 0px;
   letter-spacing: 1px;
@@ -34,7 +35,7 @@
   width: 750px;
   padding: 30px 25px;
   border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
   margin: 0 auto;
   opacity: 0;
   transform: translateY(30px);
@@ -44,7 +45,8 @@
 
 
 .form-box h3 {
-  color: #0663af;
+  color: #4062c0;
+  font-family: 'libre baskerville';
   margin-bottom: 50px;
   font-size: 28px;
   margin-top: 40px;
@@ -54,12 +56,14 @@
 .form-box p {
   font-size: 25px;
   color: #777;
+  font-family: 'open sans';
   margin-bottom: 50px;
   text-align: left;
   margin-top: 20px;
 }
 .form-box p .login{
-  color: #0663af;
+  color: #4062c0;
+  font-family: 'open sans';
   text-decoration: none;
 }
 
@@ -78,7 +82,7 @@
 
 
 .form-box button {
-  background-color: #0663af;
+  background-color: #4062c0;
   color: #fff;
   border: none;
   margin-top: 20px;
@@ -88,10 +92,11 @@
   font-size: 20px;
   width:40%;
   transition: 0.3s ease;
+  font-family: 'inter';
 }
 
 .form-box button:hover {
-  background-color: #58b7fb;
+  background-color: #7fafed;
   transform: translateY(-3px);
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
