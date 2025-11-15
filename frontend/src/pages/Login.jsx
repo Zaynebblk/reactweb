@@ -1,60 +1,57 @@
-
 import { Link } from "react-router-dom";
 import "../css/login.css";
 
 function Login() {
   const handleLogin = async (e) => {
-  e.preventDefault();
-  try {
-    const response = await fetch("http://localhost:5000/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
-    const data = await response.json();
-    alert(data.message);
-  } catch (err) {
-    console.error(err);
-  }
-};
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:5000/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await response.json();
+      alert(data.message);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
-    <div>
+    <div className="login-page">
       {/* Navbar */}
       <nav className="navbar">
-        
-          <div className="logo">
-            <img src="src\imgs\logo.png" alt="logo" width="130" height="130" />
-            <h1>TechnoZone</h1>
-          </div>
-          <ul>
-                      <li>
-                        <Link to="/Entreprise">Home</Link>
-                      </li>
-                      <li>
-                        <Link to="/Article">Article</Link>
-                      </li>
-                      <li>
-                        <Link to="/Login">Login</Link>
-                      </li>
-                      <li>
-                        <a href="/Contact" className="btn">
-                          Contact Us
-                        </a>
-                      </li>
-                    </ul>
-        
+        <div className="logo">
+          <img src="src/imgs/logo.png" alt="logo" width="80" height="80" />
+          <h2>TechnoZone</h2>
+        </div>
+        <ul>
+          <li>
+            <Link to="/entreprise">Home</Link>
+          </li>
+          <li>
+            <Link to="/article">Article</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/contact" className="btn">
+              Contact Us
+            </Link>
+          </li>
+        </ul>
       </nav>
 
-
       {/* Main container */}
-      <div className="container">
+      <main className="container">
         <div className="left-panel">
           <h1>Welcome back!</h1>
           <p>You can sign in to access your existing account.</p>
         </div>
         <div className="right-panel">
           <h2>Login</h2>
-          <form >
+          <form onSubmit={handleLogin}>
             <div className="input-group">
               <input
                 type="email"
@@ -66,22 +63,21 @@ function Login() {
               <input
                 type="password"
                 placeholder="Password"
-                
                 required
               />
             </div>
             <div className="options">
               <label>
-                <input type="checkbox" /> Remember me
+                <input type="checkbox" />Remember me
               </label>
-              <Link to="/Resetpass">Forgot password?</Link>
+              <Link to="/resetpass">Forgot password?</Link>
             </div>
             <button type="submit" className="logbtn">Login</button>
           </form>
         </div>
-      </div>
+      </main>
 
-       {/* Footer */}
+      {/* Footer */}
       <footer>
         <div>
           <button className="help-btn">Help</button>
@@ -99,7 +95,6 @@ function Login() {
         </div>
       </footer>
     </div>
-    
   );
 }
 

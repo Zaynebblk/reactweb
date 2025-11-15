@@ -1,0 +1,29 @@
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex a547bf3..3c3629e 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -1,24 +1 @@[m
+[31m-# Logs[m
+[31m-logs[m
+[31m-*.log[m
+[31m-npm-debug.log*[m
+[31m-yarn-debug.log*[m
+[31m-yarn-error.log*[m
+[31m-pnpm-debug.log*[m
+[31m-lerna-debug.log*[m
+[31m-[m
+ node_modules[m
+[31m-dist[m
+[31m-dist-ssr[m
+[31m-*.local[m
+[31m-[m
+[31m-# Editor directories and files[m
+[31m-.vscode/*[m
+[31m-!.vscode/extensions.json[m
+[31m-.idea[m
+[31m-.DS_Store[m
+[31m-*.suo[m
+[31m-*.ntvs*[m
+[31m-*.njsproj[m
+[31m-*.sln[m
+[31m-*.sw?[m

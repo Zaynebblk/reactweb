@@ -15,8 +15,8 @@ function Entreprise() {
       <nav className="navbar">
         
           <div className="logo">
-            <img src="src\imgs\logo.png" alt="logo" width="130" height="130" />
-            <h1>TechnoZone</h1>
+            <img src="src\imgs\logo.png" alt="logo" width="80" height="80" />
+            <h2>TechnoZone</h2>
           </div>
           <ul>
                       <li>
@@ -55,8 +55,9 @@ function Entreprise() {
           <img
             src="src\imgs\materiel-info.webp"
             alt="Entreprise"
+            width="500" height="300"
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
           />
         </div>
 

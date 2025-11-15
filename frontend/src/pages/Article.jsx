@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 const Article = () => {
   return (
-    <div>
+    <div>  
       <nav className="navbar">
         <div className="logo">
-            <img src="src\imgs\logo.png"></img>
+            <img src="src\imgs\logo.png" alt="logo" width="80" height="80" />
              <p>TechnoZone </p>
              </div>
         <ul>
@@ -21,8 +21,8 @@ const Article = () => {
               <Link to="/Login">Login</Link>
             </li>
             <li>
-              <a href="#" className="btn">
-                Contact Us
+              <a href="/Contact" className="btn">
+                  Contact Us
               </a>
             </li>
           </ul>

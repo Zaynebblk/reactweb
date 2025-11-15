@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-page">
       <nav className="navbar">
         <div className="logo">
           <img
             src="src/imgs/logo.png"
             alt="technoZonelogo"
-            width="100"
-            height="100"
+            width="80"
+            height="80"
           />
           <span>
             <h1>TechnoZone</h1>
