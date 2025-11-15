@@ -9,11 +9,40 @@ app.use(express.json()); // Pour lire le body JSON
 
 // Signup : ajouter un utilisateur
 app.post('/signup', (req, res) => {
-  const { email, motdepasse } = req.body;
-  const sql = 'INSERT INTO users (email, motdepasse) VALUES (?, ?)';
-  db.query(sql, [email, motdepasse], (err, result) => {
-    if (err) return res.status(500).send(err);
-    res.send('Utilisateur ajouté !');
+  const { nom, prenom, email, motdepasse } = req.body;
+  
+  if (!email || !motdepasse) {
+    return res.status(400).json({ success: false, message: 'Email et mot de passe requis' });
+  }
+
+  // Vérifier si l'email existe déjà
+  const checkSql = 'SELECT * FROM users WHERE email = ?';
+  db.query(checkSql, [email], (err, results) => {
+    if (err) {
+      console.error('Erreur lors de la vérification:', err);
+      return res.status(500).json({ success: false, message: 'Erreur serveur' });
+    }
+
+    if (results.length > 0) {
+      return res.status(409).json({ 
+        success: false, 
+        message: 'Il y a déjà un compte avec cet email' 
+      });
+    }
+
+    // Insérer le nouvel utilisateur
+    const insertSql = 'INSERT INTO users (nom, prenom, email, motdepasse) VALUES (?, ?, ?, ?)';
+    db.query(insertSql, [nom, prenom, email, motdepasse], (err, result) => {
+      if (err) {
+        console.error('Erreur lors de l\'inscription:', err);
+        return res.status(500).json({ success: false, message: 'Erreur serveur' });
+      }
+      res.json({ 
+        success: true, 
+        message: 'Inscription réussie !',
+        userId: result.insertId 
+      });
+    });
   });
 });
 

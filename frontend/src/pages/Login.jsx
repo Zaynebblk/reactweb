@@ -116,6 +116,18 @@ function Login() {
               {loading ? "Connexion..." : "Login"}
             </button>
           </form>
+          <p style={{
+            textAlign: 'center',
+            marginTop: '20px',
+            fontSize: '14px',
+            color: '#666'
+          }}>
+            Vous n'avez pas de compte ? <Link to="/Signup" style={{
+              color: '#2c22a3',
+              textDecoration: 'none',
+              fontWeight: 'bold'
+            }}>Inscrivez-vous</Link>
+          </p>
         </div>
       </div>
 
