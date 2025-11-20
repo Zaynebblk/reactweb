@@ -1,0 +1,10 @@
+{
+  "name": "reactweb",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite ./frontend",
+    "build": "vite build ./frontend",
+    "preview": "vite preview ./frontend"
+  }
+}
