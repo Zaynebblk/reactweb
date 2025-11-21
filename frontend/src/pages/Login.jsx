@@ -44,7 +44,7 @@ function Login() {
       <nav className="navbar">
         <div className="logo">
           <img src="src/imgs/logo.png" alt="logo" width="80" height="80" />
-          <h2>TechnoZone</h2>
+          <h1>TechnoZone</h1>
         </div>
         <ul>
           <li>

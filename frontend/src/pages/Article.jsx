@@ -8,7 +8,7 @@ const Article = () => {
       <nav className="navbar">
         <div className="logo">
             <img src="src\imgs\logo.png" alt="logo" width="80" height="80" />
-             <p>TechnoZone </p>
+             <h1>TechnoZone</h1>
              </div>
         <ul>
             <li>
@@ -39,25 +39,25 @@ const Article = () => {
   <h2>Our Products</h2>
   <div className="product-grid">
     <a href="pc.jsx" className="product-card">
-      <img src="src/imgs/pc-portable.png" alt="Laptop" />
+      <img src="src/imgs/pc-portable.jpg" alt="Laptop" />
       <h3>Laptop</h3>
       <p>Power and mobility combined.</p>
     </a>
 
     <a href="clavier.jsx" className="product-card">
-      <img src="/src/imgs/clavier.webp" alt="Keyboard" />
+      <img src="/src/imgs/clavier.jpg" alt="Keyboard" />
       <h3>Keyboard</h3>
       <p>Comfort and precision at your fingertips.</p>
     </a>
 
     <a href="souris.jsx" className="product-card">
-      <img src="/src/imgs/souris.jpg" alt="Mouse" />
+      <img src="/src/imgs/mouse.jpg" alt="Mouse" />
       <h3>Mouse</h3>
       <p>Fast, smooth, and ergonomic.</p>
     </a>
 
-    <a href="casque.jsx" className="product-card">
-      <img src="/src/imgs/casque.webp" alt="Headset" />
+    <a href="Headphone.jsx" className="product-card">
+      <img src="/src/imgs/casque.jpg" alt="Headset" />
       <h3>Headset</h3>
       <p>Dive into high-definition sound.</p>
     </a>

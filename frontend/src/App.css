@@ -9,7 +9,9 @@
 
 
 
-* { margin:0; padding:0; box-sizing:border-box; }
+* { margin:0; 
+  padding:0;
+   box-sizing:border-box; }
 
 html, body {
   min-height: 100%;
@@ -40,19 +42,23 @@ body {
   z-index: 1000;
   backdrop-filter: blur(10px);
 }
-
-
+.navbar h1 {
+  font-family: 'Libre Baskerville' !important;
+  font-weight: 700 !important;
+  font-size: 1.7rem !important;
+  color: var(--text-blue);
+  margin: 0;
+}
 
 .logo {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Libre Baskerville' ;
-  font-weight: 700 ;
-  font-size: 1.7rem ;
-  color: var(--text-blue);
 }
-
+.logo img {
+  width: 100px;
+  height: 100px;
+}
 
 
 .navbar ul {
@@ -130,6 +136,7 @@ footer {
 
 .social-icons {
   display: flex;
+  margin-bottom: 1.5rem;
   gap: 10px;
 }
 
@@ -157,3 +164,27 @@ footer {
   transform: scale(1.2);
   color: #360ff7;
 }
+@media (max-width: 768px) {
+
+ 
+  .navbar {
+    
+    padding: 15px 10px;
+    
+  }
+
+  .navbar ul {
+    margin-top: 10px;
+   
+    gap: 8px;
+  }
+
+  .navbar ul li {
+    margin: 0;
+  }
+  footer {
+    
+    height: auto;
+    padding: 1rem;
+    gap: 10px;
+  }}

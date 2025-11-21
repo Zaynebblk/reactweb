@@ -1,7 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #f3f8fc;
+  background-color: #e1e3fc;
   color: #333;
    margin: 0;
   padding: 0;
@@ -24,10 +24,10 @@ body {
 .contact-section {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  
   padding: 60px 100px;
   gap: 40px;
-  background-color: #f1f5f9;
+
   margin:100px auto;
   
 }
@@ -56,11 +56,16 @@ body {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     border: 1px solid #e0e0e0;
+    align-items: stretch; 
 }
 
 .info-box {
-    border: 1px solid #e0e0e0;
-    padding: 20px 10px;
+  border: 1px solid #e0e0e0;
+  padding: 20px 10px;
+  height: 100%;            
+  display: flex;            
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -77,14 +82,14 @@ body {
     line-height: 22px;
     color: #240562;
 }
-.social-icons {
+.contact-icons {
     margin-top: 25px;
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
-.social-icons .icon {
+.contact-icons .icon {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -99,24 +104,24 @@ body {
 }
 
 
-.social-icons .icon:hover {
+.contact-icons .icon:hover {
     
     color: #fff;
     transform: translateY(-4px);
 }
 
-.facebook:hover {
+.contact-icons .facebook:hover {
     background-color: #12396c;
     border-color: #092e5f;
 }
 
-.instagram:hover {
+.contact-icons .instagram:hover {
     background: radial-gradient(circle at 30% 107%, 
     #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-color: #d6249f;
 }
 
-.linkedin:hover {
+.contact-icons .linkedin:hover {
     background-color: #1397de;
     border-color: #0c374e;
 }
@@ -130,6 +135,7 @@ body {
   padding: 35px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  
   min-width: 350px;
 }
 
@@ -190,7 +196,7 @@ textarea {
   font-weight: 700; 
   text-align:center;
    display:block;
-   margin:30px auto;
+   margin:10px auto ;
   
 }
 
@@ -199,10 +205,80 @@ textarea {
 }
 
 
+@media (max-width: 992px) {
 
-@media (max-width: 600px) {
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
+  
+  .contact-section {
+    flex-direction: column;
+    padding: 40px 50px;
+    gap: 40px;
     
+  
+  }
+
+  
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
+    
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .contact-section {
+    padding: 30px 20px;
+  }
+
+ 
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  
+  .form-row {
+    flex-direction: column;
+  }
+
+  
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+ 
+  .logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+
+  
+  .contact-section {
+    padding: 20px 10px;
+  }
+
+  .contact-info {
+    padding: 20px 15px;
+  }
+
+  .contact-form {
+    padding: 25px 20px;
+  }
+
+  
+  input,
+  textarea {
+    margin-bottom: 18px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
 }

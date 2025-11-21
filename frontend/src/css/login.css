@@ -164,7 +164,7 @@ button:hover {
 
 
 
-/* responsive */
+
 @media (max-width: 850px) {
   .login-page .container { flex-direction: column; width: 92%; margin: 40px auto; }
   .login-page .left-panel, .login-page .right-panel {

@@ -21,7 +21,7 @@
 
 .maintext h1 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: #4062c0;
   margin-bottom: 1rem;
@@ -31,12 +31,12 @@
   font-size: 1.2rem;
   color: #042172;
   line-height: 1.5;
-  max-width: 800px;
+  
   margin: 0 auto;
 }
 
 .mainimg img {
-  width: 600px;
+  width: 950px;
   max-width: 85%;
   border-radius: 12px;
   margin: 2rem 0;

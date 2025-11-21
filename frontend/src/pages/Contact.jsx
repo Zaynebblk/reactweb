@@ -71,7 +71,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="social-icons">
+          <div className="contact-icons">
             <a
               href="https://www.facebook.com/"
               target="_blank"
