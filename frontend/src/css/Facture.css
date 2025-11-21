@@ -1,0 +1,389 @@
+/* Facture Page Styles */
+.facture-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.facture-container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header Section */
+.facture-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #4062c0;
+}
+
+.company-info {
+  flex: 1;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.logo-section h1 {
+  font-size: 1.8rem;
+  color: #042172;
+  font-weight: 700;
+  margin: 0;
+}
+
+.invoice-title {
+  text-align: right;
+}
+
+.invoice-title h2 {
+  font-size: 1.5rem;
+  color: #042172;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.invoice-number {
+  background: #4062c0;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Details Section */
+.details-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.client-details h3 {
+  color: #042172;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.client-details p,
+.invoice-meta p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.invoice-meta {
+  text-align: right;
+}
+
+/* Table Section */
+.facture-table-container {
+  margin: 30px 0;
+}
+
+.facture-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.facture-table thead {
+  background: #4062c0;
+  color: white;
+}
+
+.facture-table th {
+  padding: 15px 10px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.facture-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.facture-table tbody tr.empty-row {
+  opacity: 0.5;
+}
+
+.facture-table td {
+  padding: 12px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.facture-table .product-name select,
+.facture-table td input,
+.facture-table td select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f9f9f9;
+  font-size: 13px;
+}
+
+.facture-table td input {
+  max-width: 150px;
+}
+
+/* Payment Section */
+.payment-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.payment-info {
+  flex: 1;
+}
+
+.payment-info h4 {
+  color: #042172;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.payment-info p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.totals-section {
+  min-width: 300px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 15px;
+}
+
+.total-row.grand-total {
+  background: #4062c0;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Footer */
+.facture-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #4062c0;
+  color: #666;
+}
+
+.facture-footer p {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.facture-footer p:first-child {
+  font-weight: 700;
+  color: #042172;
+  font-size: 15px;
+}
+
+/* Action Buttons */
+.action-buttons {
+  max-width: 850px;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-back,
+.btn-print {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-back {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-back:hover {
+  background: #5a6268;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.4);
+}
+
+.btn-email {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-email:hover:not(:disabled) {
+  background: linear-gradient(135deg, #20c997, #28a745);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+.btn-email:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-print {
+  background: linear-gradient(135deg, #4062c0, #23237d);
+  color: white;
+}
+
+.btn-print:hover {
+  background: linear-gradient(135deg, #23237d, #4062c0);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(64, 98, 192, 0.4);
+}
+
+/* No Invoice Message */
+.no-invoice {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.no-invoice h2 {
+  color: #042172;
+  margin-bottom: 20px;
+}
+
+.no-invoice button {
+  padding: 12px 30px;
+  background: #4062c0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.no-invoice button:hover {
+  background: #23237d;
+  transform: translateY(-2px);
+}
+
+/* Print Styles */
+@media print {
+  .facture-page {
+    background: white;
+    padding: 0;
+  }
+
+  .facture-container {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .facture-table th,
+  .total-row.grand-total {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  @page {
+    margin: 1cm;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .facture-container {
+    padding: 20px;
+  }
+
+  .facture-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .invoice-title {
+    text-align: left;
+  }
+
+  .details-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .invoice-meta {
+    text-align: left;
+  }
+
+  .payment-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .totals-section {
+    min-width: 100%;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .btn-back,
+  .btn-print {
+    width: 100%;
+    justify-content: center;
+  }
+}

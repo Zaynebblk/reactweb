@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 import "../css/Article.css";
 import { Link } from "react-router-dom";
 
@@ -29,7 +30,7 @@ const Article = () => {
       </nav>
       <main className="main-content">
       <section className="hero">
-  <h1>
+  <h1 >
     Welcome to <span>TechnoZone</span>
   </h1>
   <p>Where innovation meets performance.</p>
@@ -51,7 +52,7 @@ const Article = () => {
     </a>
 
     <a href="souris.jsx" className="product-card">
-      <img src="/src/imgs/souris.jpg" alt="Mouse" />
+      <img src="/src/imgs/mouse.webp" alt="Mouse" />
       <h3>Mouse</h3>
       <p>Fast, smooth, and ergonomic.</p>
     </a>

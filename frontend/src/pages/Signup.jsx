@@ -80,7 +80,7 @@ function Signup() {
   };
 
   return (
-    <div>
+    <div className="login-page">
       {/* Navbar */}
       <nav className="navbar">
         <div className="logo">
@@ -106,8 +106,11 @@ function Signup() {
       </nav>
 
       {/* Main container */}
-      <div className="container">
-        
+      <main className="container login-page">
+        <div className="left-panel">
+          <h1>Join TechnoZone!</h1>
+          <p>Create your account to access exclusive features and start your journey with us.</p>
+        </div>
         
         <div className="right-panel">
           <h2>Sign Up</h2>
@@ -213,7 +216,7 @@ function Signup() {
             </p>
           </form>
         </div>
-      </div>
+      </main>
 
       {/* Footer */}
       <footer>

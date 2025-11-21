@@ -26,7 +26,7 @@ function Login() {
 
       if (data.success) {
         // Connexion réussie - redirection vers Entreprise
-        navigate("/Article");
+        navigate("/Client");
       } else {
         // Afficher le message d'erreur
         setError(data.message);

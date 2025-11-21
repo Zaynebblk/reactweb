@@ -1,0 +1,146 @@
+.clients-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+  background-color: #fff;
+}
+
+.page-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.search-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.clients-table {
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1.2fr 1fr 1fr 1fr 0.8fr 0.8fr;
+  background-color: #f8f9fa;
+  padding: 12px 15px;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.client-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1.2fr 1fr 1fr 1fr 0.8fr 0.8fr;
+  padding: 15px;
+  border-bottom: 1px solid #e1e8ed;
+  align-items: center;
+}
+
+.client-row:last-child {
+  border-bottom: none;
+}
+
+.cell {
+  padding: 0 5px;
+}
+
+.client-name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.client-email {
+  color: #3498db;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.client-phone {
+  color: #7f8c8d;
+}
+
+.client-company {
+  color: #2c3e50;
+}
+
+.client-last-purchase {
+  color: #7f8c8d;
+}
+
+.client-total-spent {
+  font-weight: 600;
+  color: #27ae60;
+}
+
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.status-indicator.actif {
+  color: #27ae60;
+}
+
+.status-indicator.inactif {
+  color: #e74c3c;
+}
+
+.action-link {
+  color: #3498db;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+.page-footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 14px;
+  padding-top: 15px;
+  border-top: 1px solid #e1e8ed;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .table-header, .client-row {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .table-header .header-cell:nth-child(n+4),
+  .client-row .cell:nth-child(n+4) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients-page {
+    padding: 10px;
+  }
+  
+  .table-header, .client-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
