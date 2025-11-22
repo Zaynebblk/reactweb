@@ -169,18 +169,8 @@
 /* Small screens – large phones */
 @media (max-width: 768px) {
 
-  /* Navbar stacking */
-  nav ul {
-    flex-direction: column;
-    gap: 6px;
-    text-align: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    text-align: center;
-  }
-
+  
+ 
   .container {
     margin-top: 60px;
   }
@@ -253,8 +243,5 @@
     font-size: 15px;
   }
 
-  footer {
-    flex-direction: column;
-    gap: 12px;
-  }
+ 
 }

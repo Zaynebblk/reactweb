@@ -157,3 +157,17 @@ footer {
   transform: scale(1.2);
   color: #360ff7;
 }
+@media (max-width: 768px) {
+
+  /* Navbar stacking */
+  nav ul {
+    
+    gap: 6px;
+    text-align: center;
+  }
+
+  .navbar {
+    
+    text-align: center;
+  }
+}

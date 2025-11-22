@@ -96,16 +96,7 @@
 /* Large mobile phones */
 @media (max-width: 768px) {
 
-  nav ul {
-    flex-direction: column;
-    gap: 0.7rem;
-  }
-
-  .navbar {
-    flex-direction: column;
-    text-align: center;
-  }
-
+  
   .maintext h1 {
     font-size: 2rem;
     line-height: 1.3;

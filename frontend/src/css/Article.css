@@ -102,13 +102,88 @@ body {
 
 
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
+/* SIMPLE CROSS-BROWSER RESET */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* HERO & PAGE CONTAINER */
+.main-content {
+  max-width: 1200px;
+  margin: 120px auto 60px;   /* 120px top so it doesn't hide under header */
+  padding: 0 20px;
+}
+
+/* MOBILE – TABLETS & SMALL SCREENS */
+@media (max-width: 992px) {
+  .main-content {
+    margin: 100px auto 50px;
+    padding: 0 15px;
   }
 
+  .main-content .hero {
+    padding: 60px 15px;
+  }
+}
+
+/* MOBILE – NORMAL PHONES */
+@media (max-width: 600px) {
+
+  /* Navigation (if present) */
   nav {
-    margin-top: 10px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .main-content {
+    margin: 90px auto 40px;
+    padding: 0 12px;
+  }
+
+  .main-content .hero {
+    padding: 45px 10px;
+  }
+
+  .main-content .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  /* Product layout still responsive */
+  .main-content .product-card img {
+    height: 200px; /* less overflow on phones */
+  }
+
+  .main-content .product-card h3 {
+    font-size: 1rem;
+  }
+
+  .main-content .product-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* EXTRA SMALL DEVICES – 350px and below */
+@media (max-width: 400px) {
+
+  .main-content {
+    padding: 0 8px;
+  }
+
+  .main-content .hero {
+    padding: 35px 8px;
+  }
+
+  .main-content .product-card img {
+    height: 170px;
+  }
+
+  .main-content .product-card p,
+  .main-content .product-card h3 {
+    font-size: 0.8rem;
   }
 }

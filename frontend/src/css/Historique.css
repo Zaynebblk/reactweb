@@ -348,123 +348,74 @@
   color: #042172;
 }
 
-/* Footer */
-.historique-page footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(135deg, #4062c0, #23237d);
-  color: white;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  z-index: 1000;
-}
 
-.historique-page footer .footer-info p {
-  margin: 0;
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-}
 
-.historique-page footer .help-btn {
-  background: white;
-  color: #4062c0;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 25px;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+/* 🔵 Extra responsiveness for 600px screens */
+@media (max-width: 600px) {
 
-.historique-page footer .help-btn:hover {
-  background: #f0f0f0;
-  transform: translateY(-2px);
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .historique-page header nav {
-    gap: 1rem;
-    font-size: 14px;
+  /* Fix container height with fixed header/footer */
+  .historique-container {
+    padding: 130px 15px 80px;
   }
 
-  .historique-header {
-    flex-direction: column;
-  }
-
-  .stats-summary {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-
-  .stat-card {
-    flex: 1;
-    min-width: 180px;
-  }
-}
-
-@media (max-width: 768px) {
   .historique-page header {
-    padding: 10px 20px;
+    padding: 8px 15px;
     height: auto;
     flex-wrap: wrap;
   }
 
-  .historique-page header nav {
-    order: 3;
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 0.8rem;
-    font-size: 12px;
-  }
+ 
 
-  .historique-container {
-    padding: 160px 20px 40px;
-  }
-
+  /* Make the title smaller */
   .historique-header h1 {
-    font-size: 24px;
-  }
-
-  .client-info h2 {
     font-size: 20px;
   }
 
+  /* Client block */
+  .client-info {
+    padding: 15px;
+  }
+
+  .client-info h2 {
+    font-size: 18px;
+  }
+
+  /* Stat cards full width */
   .stats-summary {
     flex-direction: column;
+    gap: 15px;
   }
 
   .stat-card {
     width: 100%;
+    padding: 18px;
+    min-width: unset;
   }
 
+  /* Achat card header stacks */
   .achat-header {
     flex-direction: column;
-    gap: 15px;
     text-align: center;
+    gap: 10px;
   }
 
-  .achat-total {
-    text-align: center;
-  }
-
+  /* Table readability */
   .produits-table {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .produits-table th,
   .produits-table td {
-    padding: 10px 8px;
+    padding: 8px 6px;
   }
 
   .totaux-section {
     max-width: 100%;
+  }
+
+ 
+
+  .historique-page footer .help-btn {
+    width: 100%;
   }
 }

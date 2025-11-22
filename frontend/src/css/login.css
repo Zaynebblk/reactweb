@@ -225,16 +225,7 @@ button:hover {
 /* Small screens – large phones */
 @media (max-width: 768px) {
 
-  /* NAVBAR */
-  nav ul {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-  }
+ 
 
   /* PANEL CONTENT */
   .left-panel h1 {
@@ -294,10 +285,7 @@ button:hover {
     font-size: 16px;
   }
 
-  footer {
-    flex-direction: column;
-    gap: 15px;
-  }
+
 }
 
 @keyframes float {
