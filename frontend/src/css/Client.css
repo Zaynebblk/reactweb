@@ -310,11 +310,7 @@
     min-width: 1000px;
   }
   
-  footer {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-  }
+  
 }
 
 

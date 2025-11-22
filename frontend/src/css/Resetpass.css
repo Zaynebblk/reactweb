@@ -122,3 +122,139 @@
 @keyframes fadeInFooter {
   to { opacity: 1; }
 }
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+=============================================== */
+
+/* Medium screens – tablets, small laptops */
+@media (max-width: 992px) {
+
+  .container {
+    width: 90%;
+    margin-top: 80px;
+    height: auto;
+  }
+
+  .form-box {
+    width: 90%;
+    padding: 25px;
+    height: auto;
+  }
+
+  .container h2 {
+    font-size: 32px;
+  }
+
+  .form-box h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .form-box p {
+    font-size: 18px;
+  }
+
+  .form-box input[type="email"] {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .form-box button {
+    width: 60%;
+    font-size: 18px;
+  }
+}
+
+
+/* Small screens – large phones */
+@media (max-width: 768px) {
+
+  /* Navbar stacking */
+  nav ul {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    margin-top: 60px;
+  }
+
+  .container h2 {
+    font-size: 26px;
+  }
+
+  .form-box {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .form-box h3 {
+    font-size: 22px;
+  }
+
+  .form-box p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .form-box input[type="email"] {
+    font-size: 15px;
+    padding: 13px;
+  }
+
+  .form-box button {
+    width: 80%;
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
+
+/* Extra small devices – compact phones */
+@media (max-width: 480px) {
+
+  .container {
+    width: 94%;
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+
+  .container h2 {
+    font-size: 22px;
+  }
+
+  .form-box {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .form-box h3 {
+    font-size: 20px;
+  }
+
+  .form-box p {
+    font-size: 15px;
+  }
+
+  .form-box input[type="email"] {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .form-box button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

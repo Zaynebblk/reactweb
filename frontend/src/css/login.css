@@ -185,21 +185,121 @@ button:hover {
 
 
 
-@media (max-width: 850px) {
-  .container {
+/* ============================================
+   RESPONSIVE STYLES
+=============================================== */
+
+/* Medium screens – tablets, small laptops */
+@media (max-width: 992px) {
+
+  .login-page .container {
     flex-direction: column;
+    width: 90%;
+    margin: 70px auto;
     height: auto;
   }
 
-  .left-panel, .right-panel {
+  .left-panel, 
+  .right-panel {
     width: 100%;
-    padding: 40px;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
   }
 
-  .left-panel {
+  .left-panel h1 {
+    font-size: 42px;
+    width: auto;
+  }
+
+  .left-panel p {
+    font-size: 17px;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+}
+
+
+/* Small screens – large phones */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  /* PANEL CONTENT */
+  .left-panel h1 {
+    font-size: 34px;
+  }
+
+  .right-panel h2 {
+    font-size: 26px;
+  }
+
+  .input-group input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 6px;
     text-align: center;
   }
 }
+
+
+/* Extra small devices – compact phones */
+@media (max-width: 480px) {
+
+  .login-page .container {
+    width: 94%;
+    margin-top: 50px;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 25px;
+  }
+
+  .left-panel h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .left-panel p {
+    font-size: 15px;
+  }
+
+  .right-panel h2 {
+    font-size: 22px;
+  }
+
+  .input-group input {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .logbtn {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0);

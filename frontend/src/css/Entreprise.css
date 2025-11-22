@@ -65,3 +65,85 @@
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* =======================================
+   Responsive Breakpoints
+======================================= */
+
+/* Tablets and smaller desktops */
+@media (max-width: 992px) {
+
+  .mainsection {
+    padding: 1.5rem;
+    height: auto;
+  }
+
+  .maintext h1 {
+    font-size: 2.4rem;
+  }
+
+  .maintext p {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .mainimg img {
+    width: 700px;
+    max-width: 90%;
+  }
+}
+
+
+/* Large mobile phones */
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .maintext h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .maintext p {
+    font-size: 1rem;
+  }
+
+  .mainimg img {
+    width: 550px;
+  }
+
+  .mainp p {
+    font-size: 1.05rem;
+  }
+}
+
+
+/* Small phones (Android, iPhone SE) */
+@media (max-width: 480px) {
+
+  .maintext h1 {
+    font-size: 1.6rem;
+  }
+
+  .maintext p {
+    font-size: 0.95rem;
+  }
+
+  .mainimg img {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 8px;
+  }
+
+  .mainsection {
+    padding: 1rem;
+  }
+
+}
