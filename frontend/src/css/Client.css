@@ -315,7 +315,7 @@ footer .help-btn:hover {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
   .client-table {
     font-size: 13px;
@@ -356,7 +356,7 @@ footer .help-btn:hover {
   }
 }
 
-/* Modal Styles */
+
 .modal-overlay {
   position: fixed;
   top: 0;
