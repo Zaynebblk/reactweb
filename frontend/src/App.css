@@ -52,9 +52,13 @@ body {
   font-size: 1.7rem ;
   color: var(--text-blue);
 }
-
-
-
+.logo h1{
+  font-size: 1.7rem !important;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+}
 .navbar ul {
   display: flex;
   gap: 1.6rem;
