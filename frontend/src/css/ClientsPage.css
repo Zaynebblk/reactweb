@@ -113,14 +113,6 @@
   text-decoration: underline;
 }
 
-.page-footer {
-  margin-top: 30px;
-  text-align: center;
-  color: #7f8c8d;
-  font-size: 14px;
-  padding-top: 15px;
-  border-top: 1px solid #e1e8ed;
-}
 
 /* Responsive design */
 @media (max-width: 1024px) {

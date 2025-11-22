@@ -273,49 +273,10 @@
   font-size: 16px;
 }
 
-/* Footer */
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(135deg, #4062c0, #23237d);
-  color: white;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  z-index: 1000;
-}
 
-.footer-info p {
-  margin: 0;
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-}
 
-footer .help-btn {
-  background: white;
-  color: #4062c0;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 25px;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.5px;
-}
 
-footer .help-btn:hover {
-  background: #e1e3fc;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-}
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .client-table {
     font-size: 13px;
@@ -356,7 +317,7 @@ footer .help-btn:hover {
   }
 }
 
-/* Modal Styles */
+
 .modal-overlay {
   position: fixed;
   top: 0;
