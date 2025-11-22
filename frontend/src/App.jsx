@@ -1,4 +1,6 @@
 // src/App.jsx
+import "normalize.css";
+
 import React from "react";
 import "./App.css";
 
