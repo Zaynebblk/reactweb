@@ -1,5 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* =======================================
+   GLOBAL FIXES (IMPORTANT)
+======================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  overflow-x: hidden;       /* Prevent horizontal scroll in Edge */
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =======================================
+   YOUR THEME
+======================================= */
 :root {
   --primary: linear-gradient(90deg, #23237D, #4062C0);
   --accent: #311b92;
@@ -8,57 +26,61 @@
 }
 
 
-
-.main-content{
-    max-width: 2200px;
-    margin: 65px auto;
-    
-    
+/* =======================================
+   MAIN CONTENT
+======================================= */
+.main-content {
+  max-width: 1400px;     /* More realistic, prevents locked zoom */
+  margin: 65px auto;
+  padding: 0 20px;
 }
+
 .main-content .hero {
   text-align: center;
   padding: 50px 20px;
-  height:200px;
-  font-family: 'libre baskerville';
-  font-size:22px;
+  height: auto;
+  font-family: 'Libre Baskerville';
+  font-size: 22px;
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .main-content .hero span {
-  
-    color: #23237D;
-    font-weight: 900;
+  color: #23237D;
+  font-weight: 900;
 }
 
 .main-content .hero p {
   color: #555;
   margin-top: 10px;
-  font-family: 'open sans' !important;
+  font-family: 'Open Sans' !important;
 }
 
 
+/* =======================================
+   PRODUCTS
+======================================= */
 .main-content .products {
   padding: 60px 20px;
   text-align: center;
-  font-family: 'libre baskerville';
-  
+  font-family: 'Libre Baskerville';
 }
+
 .main-content .products h2 {
   font-size: 2rem;
   color:#02029E;
-  font-family: 'libre baskerville';
-  
-}
-.main-content .product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  margin-top: 20px;
-  margin-bottom:0px;
 }
 
+/* Responsive grid */
+.main-content .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Card */
 .main-content .product-card {
   background: white;
   border-radius: 15px;
@@ -74,25 +96,26 @@
   box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 }
 
+/* FIXED: Make images responsive */
 .main-content .product-card img {
-  width: 300px;
-   height: 250px;   
+  width: 100%;
+  height: 250px;
   object-fit: cover;
-  border-bottom: 3px solid #23237D; 
+  border-bottom: 3px solid #23237D;
 }
 
 .main-content .product-card h3 {
   margin: 15px 0 5px;
-  
-  font-family: 'libre baskerville';
   color: #23237D;
+  font-family: 'Libre Baskerville';
 }
 
 .main-content .product-card p {
   margin-bottom: 20px;
   color: #555;
-  font-family: 'open sans';
+  font-family: 'Open Sans';
 }
+
 .main-content .product-card .price {
   font-weight: 600;
   color: #23237D;
@@ -106,72 +129,35 @@
 }
 
 
-
-
-
+/* =======================================
+   MEDIA QUERIES
+======================================= */
 @media (max-width: 992px) {
-
- 
   .main-content .hero {
     padding: 35px 15px;
     font-size: 20px;
   }
-
- 
-  .main-content .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
+
 @media (max-width: 768px) {
-
-
-  .navbar {
-    
-    padding: 15px 10px;
-    
-  }
-
-  .navbar ul {
-    margin-top: 10px;
-   
-    gap: 8px;
-  }
-
-  .navbar ul li {
-    margin: 0;
-  }
-
- 
   .main-content .product-grid {
     grid-template-columns: 1fr;
   }
 
- 
   .main-content .hero h1 {
     font-size: 1.6rem;
   }
 }
 
-
 @media (max-width: 480px) {
-
- 
-  .logo img {
-    width: 60px;
-    height: 60px;
-  }
-
-  
   .main-content .hero {
     padding: 25px 10px;
   }
 
- 
   .main-content .hero h1 {
     font-size: 1.4rem;
   }
 
-  
   .main-content .product-card img {
     height: 180px;
   }

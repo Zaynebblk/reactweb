@@ -166,7 +166,7 @@ button:hover {
 
 
 @media (max-width: 850px) {
-  .login-page .container { flex-direction: column; width: 92%; margin: 40px auto; }
+  .login-page .container { width: 92%; margin: 40px auto; }
   .login-page .left-panel, .login-page .right-panel {
     align-items: center;
     text-align: center;
@@ -180,20 +180,100 @@ button:hover {
 
 
 
-@media (max-width: 850px) {
-  .container {
-    flex-direction: column;
-    height: auto;
+@media (max-width: 992px) {
+
+  .login-page .container {
+
+    width: 90%;
+    margin: 150px auto;
+    
   }
 
-  .left-panel, .right-panel {
+  .left-panel, 
+  .right-panel {
     width: 100%;
-    padding: 40px;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
   }
 
-  .left-panel {
+  .left-panel h1 {
+    font-size: 42px;
+    width: auto;
+  }
+
+  .left-panel p {
+    font-size: 17px;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+
+
+  .left-panel h1 {
+    font-size: 34px;
+  }
+
+  .right-panel h2 {
+    font-size: 26px;
+  }
+
+  .input-group input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .options {
+    
+    gap: 6px;
     text-align: center;
   }
+}
+
+
+
+@media (max-width: 480px) {
+
+  .login-page .container {
+    width: 94%;
+    margin-top: 50px;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 25px;
+  }
+
+  .left-panel h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .left-panel p {
+    font-size: 15px;
+  }
+
+  .right-panel h2 {
+    font-size: 22px;
+  }
+
+  .input-group input {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .logbtn {
+    padding: 10px;
+    font-size: 16px;
+  }
+
 }
 @keyframes float {
   0%, 100% {

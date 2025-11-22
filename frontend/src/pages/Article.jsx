@@ -65,7 +65,7 @@ const Article = () => {
 </section>
 </main>
 
-      {/* Footer */}
+      
       <footer>
         <div>
           <button className="help-btn">Help</button>
