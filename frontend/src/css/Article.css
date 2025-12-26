@@ -95,7 +95,7 @@ body {
 .main-content .product-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 3.5 / 3;  
+  aspect-ratio: 3 / 3;  
   object-fit: cover;
   border-bottom: 3px solid #1a237e;
 }

@@ -39,29 +39,29 @@ const Article = () => {
 <section id="produits" className="products">
   <h2>Our Products</h2>
   <div className="product-grid">
-    <a href="pc.jsx" className="product-card">
+    <Link to="/Article" className="product-card">
       <img src="src/imgs/pc-portable.jpg" alt="Laptop" />
       <h3>Laptop</h3>
       <p>Power and mobility combined.</p>
-    </a>
+    </Link>
 
-    <a href="clavier.jsx" className="product-card">
+    <Link to="/Article" className="product-card">
       <img src="/src/imgs/keyboard.jpg" alt="Keyboard" />
       <h3>Keyboard</h3>
       <p>Comfort and precision at your fingertips.</p>
-    </a>
+    </Link>
 
-    <a href="souris.jsx" className="product-card">
+    <Link to="/Article" className="product-card">
       <img src="/src/imgs/mouse.jpg" alt="Mouse" />
       <h3>Mouse</h3>
       <p>Fast, smooth, and ergonomic.</p>
-    </a>
+    </Link>
 
-    <a href="casque.jsx" className="product-card">
+    <Link to="/Headphone" className="product-card">
       <img src="/src/imgs/headphone.jpg" alt="Headset" />
       <h3>Headset</h3>
       <p>Dive into high-definition sound.</p>
-    </a>
+    </Link>
   </div>
 </section>
 </main>

@@ -14,6 +14,7 @@ import Signup from "./pages/Signup.jsx";
 import Client from "./pages/Client.jsx";
 import Facture from "./pages/Facture.jsx";
 import Historique from "./pages/Historique.jsx";
+import Headphone from "./pages/Headphone.jsx";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -31,6 +32,7 @@ export default function App() {
       <Route path="/Client" element={<Client />} />
       <Route path="/Facture" element={<Facture />} />
       <Route path="/Historique" element={<Historique />} />
+      <Route path="/Headphone" element={<Headphone />} />
      
     </Routes>
   );
