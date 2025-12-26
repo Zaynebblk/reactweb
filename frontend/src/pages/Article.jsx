@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Article = () => {
   return (
-    <div>  
+    <div className="page">  
       <nav className="navbar">
         <div className="logo">
             <img src="src\imgs\logo.png" alt="logo" width="80" height="80" />
