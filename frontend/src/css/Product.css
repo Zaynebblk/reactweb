@@ -1,7 +1,10 @@
 .products {
-  padding: 100px 40px 80px;
   text-align: center;
   background-color: #f3f4ff;
+  display: block;
+  align-items: center; 
+
+  
 }
 
 .products h2 {
@@ -12,28 +15,33 @@
   letter-spacing: 1px;
 }
 
-.product-grid .headphone{
+.product-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 300px));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  justify-content: center;
+  padding: 10px 20px;
+  
   margin: 0 auto;
-  padding:10px 130px;
+  justify-items: center;
+  
 }
+
 
 .product-card {
  
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background-color: #470808;
   border-radius: 20px;
-  overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
   cursor: pointer;
   border: 2px solid transparent;
-align-items: center; /* center content inside each card */
+  align-items: center; 
   text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+  
 }
 
 .product-card:hover {
@@ -74,10 +82,11 @@ align-items: center; /* center content inside each card */
   font-size: 0.95rem;
   line-height: 1.6;
 }
-
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .product-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    padding: 0 20px;
   }
 }
 
@@ -85,13 +94,31 @@ align-items: center; /* center content inside each card */
   .products {
     padding: 80px 20px 60px;
   }
-
+}
+@media (max-width: 480px) {
   .product-grid {
     grid-template-columns: 1fr;
     gap: 25px;
+    padding: 0 15px;
+  }
+
+  .product-card {
+    max-width: 100%;
   }
 
   .product-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
+
+  .product-card .desc {
+    font-size: 0.9rem;
+  }
+}
+.products {
+  text-align: center;
+  background-color: #f3f4ff;
+  display: block;
+  align-items: center; 
+
+  
 }

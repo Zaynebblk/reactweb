@@ -3,7 +3,7 @@ import "../App.css";
 import "../css/Product.css";
 import { Link } from "react-router-dom";
 
-const Headphone = () => {
+const Mouse = () => {
   return (
     <div className="page">
       <nav className="navbar">
@@ -33,45 +33,43 @@ const Headphone = () => {
       <main className="main-content">
         {/* Products Section */}
         <section className="products">
-          <h2>Our Headphones</h2>
+          <h2>Our Mice</h2>
 
           <div className="product-grid">
-            
             <div className="product-card">
-              <img src="src/imgs/casque1.avif" alt="Bluetooth Headset" />
-              <h3>Gaming Headset – HyperX Cloud II</h3>
-              <p className="price">Price: 380 TND</p>
+              <img src="src/imgs/mouse1.png" alt="Gaming Mouse" />
+              <h3>Gaming Mouse – Logitech G502 Hero</h3>
+              <p className="price">Price: 180 TND</p>
               <p className="desc">
-                7.1 surround sound, detachable noise-canceling microphone,
-                optimal comfort for long gaming sessions.
+                High-precision HERO sensor, customizable buttons, adjustable
+                weights — perfect for competitive gaming.
               </p>
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/casque2.png" alt="Gaming Headset" />
-              <h3>Wireless Headphones – Sony WH-1000XM4</h3>
-              <p className="price">Price: 750 TND</p>
+              <img src="src/imgs/mouse2.jpg" alt="Wireless Mouse" />
+              <h3>Wireless Mouse – Logitech MX Master 3</h3>
+              <p className="price">Price: 320 TND</p>
               <p className="desc">
-                Active noise cancellation, up to 30 hours of battery life,
-                Bluetooth connection, and premium comfort.
+                Ergonomic design, ultra-fast scrolling, multi-device support,
+                and long-lasting battery life.
               </p>
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/casque3.png" alt="Studio Headphones" />
-              <h3>Budget Headphones – JBL Tune 500</h3>
-              <p className="price">Price: 190 TND</p>
+              <img src="src/imgs/mouse3.jpg" alt="Office Mouse" />
+              <h3>Office Mouse – Microsoft Bluetooth Mouse</h3>
+              <p className="price">Price: 95 TND</p>
               <p className="desc">
-                Lightweight, foldable, powerful sound with deep bass for an
-                excellent value.
+                Compact, comfortable, and reliable — ideal for everyday office
+                work and portability.
               </p>
-            
             </div>
           </div>
         </section>
       </main>
 
-       <footer>
+      <footer>
         <div>
           <button className="help-btn">Help</button>
         </div>
@@ -91,4 +89,4 @@ const Headphone = () => {
   );
 };
 
-export default Headphone;
+export default Mouse;

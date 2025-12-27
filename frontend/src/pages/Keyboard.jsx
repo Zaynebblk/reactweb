@@ -3,7 +3,7 @@ import "../App.css";
 import "../css/Product.css";
 import { Link } from "react-router-dom";
 
-const Headphone = () => {
+const Keyboard = () => {
   return (
     <div className="page">
       <nav className="navbar">
@@ -33,45 +33,43 @@ const Headphone = () => {
       <main className="main-content">
         {/* Products Section */}
         <section className="products">
-          <h2>Our Headphones</h2>
+          <h2>Our Keyboards</h2>
 
           <div className="product-grid">
-            
             <div className="product-card">
-              <img src="src/imgs/casque1.avif" alt="Bluetooth Headset" />
-              <h3>Gaming Headset – HyperX Cloud II</h3>
-              <p className="price">Price: 380 TND</p>
+              <img src="src/imgs/clavier1.png" alt="Mechanical Keyboard" />
+              <h3>Mechanical Keyboard – Redragon K552</h3>
+              <p className="price">Price: 220 TND</p>
               <p className="desc">
-                7.1 surround sound, detachable noise-canceling microphone,
-                optimal comfort for long gaming sessions.
+                Compact mechanical keyboard with RGB backlighting, durable
+                switches, and excellent gaming performance.
               </p>
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/casque2.png" alt="Gaming Headset" />
-              <h3>Wireless Headphones – Sony WH-1000XM4</h3>
-              <p className="price">Price: 750 TND</p>
+              <img src="src/imgs/clavier2.png" alt="Wireless Keyboard" />
+              <h3>Wireless Keyboard – Logitech MX Keys</h3>
+              <p className="price">Price: 420 TND</p>
               <p className="desc">
-                Active noise cancellation, up to 30 hours of battery life,
-                Bluetooth connection, and premium comfort.
+                Smart illumination, ultra-comfortable typing, multi-device
+                Bluetooth connectivity, and long battery life.
               </p>
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/casque3.png" alt="Studio Headphones" />
-              <h3>Budget Headphones – JBL Tune 500</h3>
-              <p className="price">Price: 190 TND</p>
+              <img src="src/imgs/clavier3.webp" alt="Gaming Keyboard" />
+              <h3>Gaming Keyboard – Razer BlackWidow</h3>
+              <p className="price">Price: 520 TND</p>
               <p className="desc">
-                Lightweight, foldable, powerful sound with deep bass for an
-                excellent value.
+                Razer mechanical switches, customizable RGB lighting, and
+                optimized for competitive gaming.
               </p>
-            
             </div>
           </div>
         </section>
       </main>
 
-       <footer>
+      <footer>
         <div>
           <button className="help-btn">Help</button>
         </div>
@@ -91,4 +89,4 @@ const Headphone = () => {
   );
 };
 
-export default Headphone;
+export default Keyboard;

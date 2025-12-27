@@ -15,6 +15,9 @@ import Client from "./pages/Client.jsx";
 import Facture from "./pages/Facture.jsx";
 import Historique from "./pages/Historique.jsx";
 import Headphone from "./pages/Headphone.jsx";
+import Keyboard from "./pages/Keyboard.jsx";
+import Computer from "./pages/Computer.jsx";
+import Mouse from "./pages/Mouse.jsx";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -33,6 +36,10 @@ export default function App() {
       <Route path="/Facture" element={<Facture />} />
       <Route path="/Historique" element={<Historique />} />
       <Route path="/Headphone" element={<Headphone />} />
+      <Route path="/Keyboard" element={<Keyboard />} />
+      <Route path="/Mouse" element={<Mouse />} />
+      <Route path="/Computer" element={<Computer />} />
+
      
     </Routes>
   );

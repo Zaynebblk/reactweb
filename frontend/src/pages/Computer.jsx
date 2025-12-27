@@ -3,7 +3,7 @@ import "../App.css";
 import "../css/Product.css";
 import { Link } from "react-router-dom";
 
-const Headphone = () => {
+const Laptop = () => {
   return (
     <div className="page">
       <nav className="navbar">
@@ -33,45 +33,43 @@ const Headphone = () => {
       <main className="main-content">
         {/* Products Section */}
         <section className="products">
-          <h2>Our Headphones</h2>
+          <h2>Our Laptops</h2>
 
           <div className="product-grid">
-            
             <div className="product-card">
-              <img src="src/imgs/casque1.avif" alt="Bluetooth Headset" />
-              <h3>Gaming Headset – HyperX Cloud II</h3>
-              <p className="price">Price: 380 TND</p>
+              <img src="src/imgs/laptop1.png" alt="Gaming Laptop" />
+              <h3>Gaming Laptop – ASUS TUF F15</h3>
+              <p className="price">Price: 3,100 TND</p>
               <p className="desc">
-                7.1 surround sound, detachable noise-canceling microphone,
-                optimal comfort for long gaming sessions.
+                Intel Core i7, RTX graphics, 16GB RAM, 144Hz display — powerful
+                performance for gaming and multitasking.
               </p>
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/casque2.png" alt="Gaming Headset" />
-              <h3>Wireless Headphones – Sony WH-1000XM4</h3>
-              <p className="price">Price: 750 TND</p>
+              <img src="src/imgs/laptop2.jpg" alt="Ultrabook" />
+              <h3>Ultrabook – MacBook Air M1</h3>
+              <p className="price">Price: 3,600 TND</p>
               <p className="desc">
-                Active noise cancellation, up to 30 hours of battery life,
-                Bluetooth connection, and premium comfort.
+                Apple M1 chip, silent fanless design, long battery life, and a
+                stunning Retina display.
               </p>
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/casque3.png" alt="Studio Headphones" />
-              <h3>Budget Headphones – JBL Tune 500</h3>
-              <p className="price">Price: 190 TND</p>
+              <img src="src/imgs/laptop3.png" alt="Student Laptop" />
+              <h3>Student Laptop – Lenovo IdeaPad 3</h3>
+              <p className="price">Price: 1,750 TND</p>
               <p className="desc">
-                Lightweight, foldable, powerful sound with deep bass for an
-                excellent value.
+                AMD Ryzen processor, lightweight design, and excellent value
+                for everyday tasks and online learning.
               </p>
-            
             </div>
           </div>
         </section>
       </main>
 
-       <footer>
+      <footer>
         <div>
           <button className="help-btn">Help</button>
         </div>
@@ -91,4 +89,4 @@ const Headphone = () => {
   );
 };
 
-export default Headphone;
+export default Laptop;
