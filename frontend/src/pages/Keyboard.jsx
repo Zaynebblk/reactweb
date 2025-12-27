@@ -37,7 +37,7 @@ const Keyboard = () => {
 
           <div className="product-grid">
             <div className="product-card">
-              <img src="src/imgs/clavier1.png" alt="Mechanical Keyboard" />
+              <img className="reduced" src="src/imgs/clavier1.png" alt="Mechanical Keyboard" />
               <h3>Mechanical Keyboard – Redragon K552</h3>
               <p className="price">Price: 220 TND</p>
               <p className="desc">
@@ -47,7 +47,7 @@ const Keyboard = () => {
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/clavier2.png" alt="Wireless Keyboard" />
+              <img className="reduced" src="src/imgs/clavier2.png" alt="Wireless Keyboard" />
               <h3>Wireless Keyboard – Logitech MX Keys</h3>
               <p className="price">Price: 420 TND</p>
               <p className="desc">
@@ -57,7 +57,7 @@ const Keyboard = () => {
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/clavier3.webp" alt="Gaming Keyboard" />
+              <img className="reduced" src="src/imgs/clavier33.png" alt="Gaming Keyboard" />
               <h3>Gaming Keyboard – Razer BlackWidow</h3>
               <p className="price">Price: 520 TND</p>
               <p className="desc">

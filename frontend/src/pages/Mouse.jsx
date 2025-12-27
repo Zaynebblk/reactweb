@@ -37,7 +37,7 @@ const Mouse = () => {
 
           <div className="product-grid">
             <div className="product-card">
-              <img src="src/imgs/mouse1.png" alt="Gaming Mouse" />
+              <img className="reduced" src="src/imgs/mouse1.png" alt="Gaming Mouse" />
               <h3>Gaming Mouse – Logitech G502 Hero</h3>
               <p className="price">Price: 180 TND</p>
               <p className="desc">
@@ -47,7 +47,7 @@ const Mouse = () => {
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/mouse2.jpg" alt="Wireless Mouse" />
+              <img className="reduced" src="src/imgs/mouse22.png" alt="Wireless Mouse" />
               <h3>Wireless Mouse – Logitech MX Master 3</h3>
               <p className="price">Price: 320 TND</p>
               <p className="desc">
@@ -57,7 +57,7 @@ const Mouse = () => {
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/mouse3.jpg" alt="Office Mouse" />
+              <img className="reduced" src="src/imgs/mouse33.png" alt="Office Mouse" />
               <h3>Office Mouse – Microsoft Bluetooth Mouse</h3>
               <p className="price">Price: 95 TND</p>
               <p className="desc">

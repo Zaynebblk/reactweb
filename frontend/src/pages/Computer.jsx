@@ -47,7 +47,7 @@ const Laptop = () => {
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/laptop2.jpg" alt="Ultrabook" />
+              <img src="src/imgs/laptop22.png" alt="Ultrabook" />
               <h3>Ultrabook – MacBook Air M1</h3>
               <p className="price">Price: 3,600 TND</p>
               <p className="desc">
@@ -57,7 +57,7 @@ const Laptop = () => {
             </div>
 
             <div className="product-card">
-              <img src="src/imgs/laptop3.png" alt="Student Laptop" />
+              <img src="src/imgs/laptop33.png" alt="Student Laptop" />
               <h3>Student Laptop – Lenovo IdeaPad 3</h3>
               <p className="price">Price: 1,750 TND</p>
               <p className="desc">

@@ -38,7 +38,7 @@ const Headphone = () => {
           <div className="product-grid">
             
             <div className="product-card">
-              <img src="src/imgs/casque1.avif" alt="Bluetooth Headset" />
+              <img src="src/imgs/casque11.png" alt="Bluetooth Headset" />
               <h3>Gaming Headset – HyperX Cloud II</h3>
               <p className="price">Price: 380 TND</p>
               <p className="desc">
