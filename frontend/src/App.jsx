@@ -18,6 +18,7 @@ import Headphone from "./pages/Headphone.jsx";
 import Keyboard from "./pages/Keyboard.jsx";
 import Computer from "./pages/Computer.jsx";
 import Mouse from "./pages/Mouse.jsx";
+import Dashboard from "./pages/user.jsx";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -39,6 +40,7 @@ export default function App() {
       <Route path="/Keyboard" element={<Keyboard />} />
       <Route path="/Mouse" element={<Mouse />} />
       <Route path="/Computer" element={<Computer />} />
+      <Route path="/dashboard" element={<Dashboard />} />
 
      
     </Routes>

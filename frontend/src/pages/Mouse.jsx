@@ -47,7 +47,7 @@ const Mouse = () => {
             </div>
 
             <div className="product-card">
-              <img className="reduced" src="src/imgs/mouse22.png" alt="Wireless Mouse" />
+              <img className="reduced" src="src/imgs/mouse logitech.webp" alt="Wireless Mouse" />
               <h3>Wireless Mouse – Logitech MX Master 3</h3>
               <p className="price">Price: 320 TND</p>
               <p className="desc">

@@ -25,8 +25,8 @@ function Login() {
       const data = await response.json();
 
       if (data.success) {
-        // Connexion réussie - redirection vers Entreprise
-        navigate("/Client");
+        // Connexion réussie - redirection vers tableau de bord
+        navigate("/dashboard");
       } else {
         // Afficher le message d'erreur
         setError(data.message);
